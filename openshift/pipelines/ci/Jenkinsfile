@@ -1,7 +1,6 @@
-runCIPipeline(application: "test-approval",
+runCIPipeline(application: env.APP_NAME,
               agent: "maven",
-              compileCommands: "mvn clean install -DskipTests",
+              compileCommands: "mvn package -DskipTests -Dfabric8.skip -e -B",
               testCommands: "",
-              artifactDir: ".",
-              approversGroup: "test-approval-approvers")
+              artifactDir: ".")
               
