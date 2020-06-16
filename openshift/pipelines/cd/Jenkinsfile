@@ -1,0 +1,6 @@
+runCDPipeline(application: "test-approval",
+              agent: "maven",
+              compileCommands: "mvn clean install -DskipTests",
+              testCommands: "",
+              artifactDir: ".")
+  
