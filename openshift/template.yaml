@@ -31,7 +31,7 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: fuse7-java-openshift:1.5
+          name: redhat-openjdk18-openshift:1.4
           namespace: openshift
       type: Source
 - apiVersion: v1

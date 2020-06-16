@@ -1,6 +1,6 @@
 runCIPipeline(application: env.APP_NAME,
               agent: "maven",
-              compileCommands: "mvn package -DskipTests -Dfabric8.skip -e -B",
+              compileCommands: "mvn clean install -DskipTests",
               testCommands: "",
-              artifactDir: ".")
+              artifactDir: "./target")
               
