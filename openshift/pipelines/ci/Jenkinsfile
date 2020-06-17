@@ -2,5 +2,5 @@ runCIPipeline(application: env.APP_NAME,
               agent: "maven",
               compileCommands: "mvn clean install -DskipTests",
               testCommands: "",
-              artifactDir: "./target")
+              artifactsDir: "./target")
               
