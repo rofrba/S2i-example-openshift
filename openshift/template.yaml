@@ -65,6 +65,7 @@ objects:
           - containerPort: 8080
             protocol: TCP
           - containerPort: 8778
+            name: jolokia
             protocol: TCP
     triggers:
     - imageChangeParams:
