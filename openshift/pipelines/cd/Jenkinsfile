@@ -1,6 +1,6 @@
 runCDPipeline(application: env.APP_NAME,
               agent: "maven",
-              compileCommands: "mvn clean install -DskipTests",
+              compileCommands: "mvn -s /home/jenkins/newsan/settings.xml clean install -DskipTests",
               testCommands: "",
               artifactsDir: "./target")
   
