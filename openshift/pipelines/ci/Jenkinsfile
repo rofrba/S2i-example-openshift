@@ -1,4 +1,4 @@
-runPipelineTest(application: env.APP_NAME,
+runCIPipeline(application: env.APP_NAME,
               agent: "maven",
               compileCommands: "mvn clean install -DskipTests",
               testCommands: "",
