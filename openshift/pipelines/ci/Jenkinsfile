@@ -4,3 +4,5 @@ runCIPipeline(application: env.APP_NAME,
               testCommands: "",
               artifactsDir: "./target")
               
+
+              
