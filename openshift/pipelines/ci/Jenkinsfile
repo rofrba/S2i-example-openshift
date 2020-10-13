@@ -1,6 +1,6 @@
 runCIPipelineQuay(application: "test-approval",
               project: "test-push-quay",
-              agent: "maven",
+              agent: "master",
               compileCommands: "mvn clean install -DskipTests",
               testCommands: "",
               artifactsDir: "./target",
