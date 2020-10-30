@@ -1,8 +1,8 @@
-runCIPipeline(application: env.APP_NAME,
-              agent: "maven",
+runCIPipelineQuay(application: "test-approval",
+              project: "test-push-quay",
+              agent: "master",
               compileCommands: "mvn clean install -DskipTests",
               testCommands: "",
-              artifactsDir: "./target")
-              
-
+              artifactsDir: "./target",
+              applicationTemplate: "./openshift/template.yaml")
               
