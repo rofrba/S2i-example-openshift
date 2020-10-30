@@ -1,4 +1,4 @@
-runCDPipeline(application: env.APP_NAME,
+runCDPipelineV2(application: env.APP_NAME,
               agent: "maven",
               compileCommands: "mvn  clean install -DskipTests",
               testCommands: "",
